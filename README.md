@@ -32,7 +32,7 @@ Scoreboard-based data integrity checks
 
 Protocol compliance verification
 
-Project Significance
+**Project Significance**
 
 This project demonstrates:
 
