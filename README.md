@@ -1,11 +1,10 @@
-AHB to APB Bridge – RTL Design & UVM Verification
-Overview
+**AHB to APB Bridge – RTL Design & UVM Verification**
 
 This repository contains a synthesizable AHB to APB Bridge RTL design implemented in compliance with AMBA AHB/APB protocol specifications, along with a structured UVM-based verification environment.
 
 The bridge performs protocol conversion between the high-performance AHB bus and the low-power APB bus, enabling efficient communication between processors and peripheral devices within an SoC architecture.
 
-Design Highlights
+**Design Highlights**
 
 RTL implementation using Verilog/SystemVerilog
 
@@ -21,7 +20,7 @@ HREADY and HRESP response management
 
 Modular and synthesizable architecture
 
-Verification Methodology
+**Verification Methodology**
 
 UVM-based testbench architecture
 
