@@ -1,0 +1,2 @@
+var g_data = {"14":{"st":"inst","pa":0,"n":"/bridge_pkg","l":"SystemVerilog","sn":2,"du":{"n":"work.bridge_pkg","s":2,"b":1},"bc":[{"n":"bridge_pkg","s":14,"z":1}],"loc":{"cp":95.41,"data":{"gb":[29,24,1],"cvpc":[8,1],"g":[2,90.83,1],"a":[6,6,1]}}},"2":{"st":"du","pa":0,"n":"work.bridge_pkg","l":"SystemVerilog","sn":2,"one_inst":14,"loc":{"cp":95.41,"data":{"gb":[29,24,1],"cvpc":[8,1],"g":[2,90.83,1],"a":[6,6,1]}}}};
+processSummaryData(g_data);

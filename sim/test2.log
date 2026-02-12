@@ -1,0 +1,392 @@
+# vsim -cvgperinstance -vopt -voptargs="+acc" -coverage -sva -c -do " log -r /* ;coverage save -onexit mem_cov2;run -all; exit" -wlf wave_file2.wlf -l test2.log -sv_seed random work.top "+UVM_TESTNAME=single_test" 
+# Start time: 12:34:49 on Dec 16,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 2022.1 linux Jan 29 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.bridge_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.bridge_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.bridge_if(fast__2)
+# Loading work.rtl_top(fast)
+# Loading work.ahb(fast)
+# Loading work.apb_controller(fast)
+# Loading work.apb(fast)
+# Loading /home/cad/eda/Questa-sim/questasim/uvm-1.1d/linux/uvm_dpi.so
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# Sv_Seed = 2656575659
+#  log -r /* 
+# coverage save -onexit mem_cov2
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test single_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------------
+# Name                         Type                        Size  Value
+# --------------------------------------------------------------------
+# uvm_test_top                 single_test                 -     @474 
+#   env_h                      env                         -     @490 
+#     ahb_agt_toph             ahb_agent_top               -     @508 
+#       ahb_agnth              ahb_agent                   -     @725 
+#         ahb_drvh             ahb_driver                  -     @854 
+#           rsp_port           uvm_analysis_port           -     @869 
+#           seq_item_port      uvm_seq_item_pull_port      -     @861 
+#         ahb_monh             ahb_monitor                 -     @737 
+#           ahb_port           uvm_analysis_port           -     @880 
+#         ahb_seqrh            ahb_sequencer               -     @745 
+#           rsp_export         uvm_analysis_export         -     @752 
+#           seq_item_export    uvm_seq_item_pull_imp       -     @846 
+#           arbitration_queue  array                       0     -    
+#           lock_queue         array                       0     -    
+#           num_last_reqs      integral                    32    'd1  
+#           num_last_rsps      integral                    32    'd1  
+#     apb_agt_toph             apb_agent_top               -     @501 
+#       apb_agnth              apb_agent                   -     @893 
+#         apb_drvh             apb_driver                  -     @1023
+#           rsp_port           uvm_analysis_port           -     @1038
+#           seq_item_port      uvm_seq_item_pull_port      -     @1030
+#         apb_monh             apb_monitor                 -     @906 
+#           apb_port           uvm_analysis_port           -     @1048
+#         apb_seqrh            apb_sequencer               -     @914 
+#           rsp_export         uvm_analysis_export         -     @921 
+#           seq_item_export    uvm_seq_item_pull_imp       -     @1015
+#           arbitration_queue  array                       0     -    
+#           lock_queue         array                       0     -    
+#           num_last_reqs      integral                    32    'd1  
+#           num_last_rsps      integral                    32    'd1  
+#     scoreboard_h             scoreboard                  -     @515 
+#       ahb_fifo               uvm_tlm_analysis_fifo #(T)  -     @522 
+#         analysis_export      uvm_analysis_imp            -     @561 
+#         get_ap               uvm_analysis_port           -     @553 
+#         get_peek_export      uvm_get_peek_imp            -     @537 
+#         put_ap               uvm_analysis_port           -     @545 
+#         put_export           uvm_put_imp                 -     @529 
+#       apb_fifo               uvm_tlm_analysis_fifo #(T)  -     @569 
+#         analysis_export      uvm_analysis_imp            -     @608 
+#         get_ap               uvm_analysis_port           -     @600 
+#         get_peek_export      uvm_get_peek_imp            -     @584 
+#         put_ap               uvm_analysis_port           -     @592 
+#         put_export           uvm_put_imp                 -     @576 
+#     vseqrh                   virtual_sequencer           -     @616 
+#       rsp_export             uvm_analysis_export         -     @623 
+#       seq_item_export        uvm_seq_item_pull_imp       -     @717 
+#       arbitration_queue      array                       0     -    
+#       lock_queue             array                       0     -    
+#       num_last_reqs          integral                    32    'd1  
+#       num_last_rsps          integral                    32    'd1  
+# --------------------------------------------------------------------
+# 
+# inside DEFAULT state                   5
+# driving the Data
+# driving the Data
+# Width = 32, size 8 bits
+#                   35BYTE0_endian1
+#                   35BYTE1_endian1
+# UVM_INFO ../tb/scoreboard.sv(90) @ 35: uvm_test_top.env_h.scoreboard_h [SCOREBOARD AHB] src_xtn data getting from tlm fifo 
+#  -------------------------------------
+# Name      Type       Size  Value     
+# -------------------------------------
+# xtn       ahb_trans  -     @1078     
+#   Haddr   integral   32    'h840001f1
+#   Hwdata  integral   32    'h24f7c359
+#   Hwrite  integral   1     1         
+#   Htrans  integral   2     2         
+#   Hsize   integral   2     'd0       
+#   Hburst  integral   3     'h0       
+#   Hrdata  integral   32    'h0       
+# -------------------------------------
+# 
+# driving the Data
+# Width = 32, size 8 bits
+#                   55BYTE1_endian1
+#                   55BYTE0_endian1
+# driving the Data
+# UVM_INFO ../tb/scoreboard.sv(99) @ 65: uvm_test_top.env_h.scoreboard_h [SCOREBOARD APB] apb_xtn data getting from tlm fifo 
+#  --------------------------------------
+# Name       Type       Size  Value     
+# --------------------------------------
+# apb_xtnh   apb_trans  -     @1164     
+#   Prdata   integral   32    'h0       
+#   Pwdata   integral   32    'hc3      
+#   Paddr    integral   32    'h840001f1
+#   Pselx    integral   4     'd2       
+#   Pwrite   integral   1     1         
+#   Penable  integral   1     1         
+# --------------------------------------
+# 
+# ADDRESS COMPARED SUCESSFULLY
+# Haddr = 2214593009, Paddr = 2214593009
+# DATA COMPARED SUCESSFULLY
+# Hwdata = 195, Pwdata = 195
+# UVM_INFO ../tb/scoreboard.sv(90) @ 65: uvm_test_top.env_h.scoreboard_h [SCOREBOARD AHB] src_xtn data getting from tlm fifo 
+#  -------------------------------------
+# Name      Type       Size  Value     
+# -------------------------------------
+# xtn       ahb_trans  -     @1169     
+#   Haddr   integral   32    'h84000024
+#   Hwdata  integral   32    'h9f43a85a
+#   Hwrite  integral   1     1         
+#   Htrans  integral   2     2         
+#   Hsize   integral   2     'd0       
+#   Hburst  integral   3     'h0       
+#   Hrdata  integral   32    'h0       
+# -------------------------------------
+# 
+# Width = 32, size 32 bits
+# driving the Data
+# UVM_INFO ../tb/scoreboard.sv(99) @ 85: uvm_test_top.env_h.scoreboard_h [SCOREBOARD APB] apb_xtn data getting from tlm fifo 
+#  --------------------------------------
+# Name       Type       Size  Value     
+# --------------------------------------
+# apb_xtnh   apb_trans  -     @1181     
+#   Prdata   integral   32    'h0       
+#   Pwdata   integral   32    'h5a      
+#   Paddr    integral   32    'h84000024
+#   Pselx    integral   4     'd6       
+#   Pwrite   integral   1     1         
+#   Penable  integral   1     1         
+# --------------------------------------
+# 
+# ADDRESS COMPARED SUCESSFULLY
+# Haddr = 2214592548, Paddr = 2214592548
+# DATA COMPARED SUCESSFULLY
+# Hwdata = 90, Pwdata = 90
+# UVM_INFO ../tb/scoreboard.sv(90) @ 85: uvm_test_top.env_h.scoreboard_h [SCOREBOARD AHB] src_xtn data getting from tlm fifo 
+#  -------------------------------------
+# Name      Type       Size  Value     
+# -------------------------------------
+# xtn       ahb_trans  -     @1173     
+#   Haddr   integral   32    'h84000258
+#   Hwdata  integral   32    'hd8025c34
+#   Hwrite  integral   1     1         
+#   Htrans  integral   2     2         
+#   Hsize   integral   2     2         
+#   Hburst  integral   3     'h0       
+#   Hrdata  integral   32    'h0       
+# -------------------------------------
+# 
+# Width = 32, size 8 bits
+#                   95BYTE0_endian1
+#                   95BYTE1_endian1
+# UVM_INFO ../tb/scoreboard.sv(99) @ 105: uvm_test_top.env_h.scoreboard_h [SCOREBOARD APB] apb_xtn data getting from tlm fifo 
+#  --------------------------------------
+# Name       Type       Size  Value     
+# --------------------------------------
+# apb_xtnh   apb_trans  -     @1190     
+#   Prdata   integral   32    'h0       
+#   Pwdata   integral   32    'hd8025c34
+#   Paddr    integral   32    'h84000258
+#   Pselx    integral   4     'd6       
+#   Pwrite   integral   1     1         
+#   Penable  integral   1     1         
+# --------------------------------------
+# 
+# ADDRESS COMPARED SUCESSFULLY
+# Haddr = 2214593112, Paddr = 2214593112
+# DATA COMPARED SUCESSFULLY
+# Hwdata = 3624033332, Pwdata = 3624033332
+# UVM_INFO ../tb/scoreboard.sv(90) @ 105: uvm_test_top.env_h.scoreboard_h [SCOREBOARD AHB] src_xtn data getting from tlm fifo 
+#  -------------------------------------
+# Name      Type       Size  Value     
+# -------------------------------------
+# xtn       ahb_trans  -     @1177     
+#   Haddr   integral   32    'h88000209
+#   Hwdata  integral   32    'hc630fb8d
+#   Hwrite  integral   1     1         
+#   Htrans  integral   2     2         
+#   Hsize   integral   2     'd0       
+#   Hburst  integral   3     'h0       
+#   Hrdata  integral   32    'h0       
+# -------------------------------------
+# 
+# Width = 32, size 8 bits
+#                  115BYTE1_endian1
+#                  115BYTE3_endian1
+# UVM_INFO ../tb/scoreboard.sv(99) @ 125: uvm_test_top.env_h.scoreboard_h [SCOREBOARD APB] apb_xtn data getting from tlm fifo 
+#  --------------------------------------
+# Name       Type       Size  Value     
+# --------------------------------------
+# apb_xtnh   apb_trans  -     @1198     
+#   Prdata   integral   32    'h0       
+#   Pwdata   integral   32    'hfb      
+#   Paddr    integral   32    'h88000209
+#   Pselx    integral   4     'd6       
+#   Pwrite   integral   1     1         
+#   Penable  integral   1     1         
+# --------------------------------------
+# 
+# ADDRESS COMPARED SUCESSFULLY
+# Haddr = 2281701897, Paddr = 2281701897
+# DATA COMPARED SUCESSFULLY
+# Hwdata = 251, Pwdata = 251
+# UVM_INFO ../tb/scoreboard.sv(90) @ 125: uvm_test_top.env_h.scoreboard_h [SCOREBOARD AHB] src_xtn data getting from tlm fifo 
+#  -------------------------------------
+# Name      Type       Size  Value     
+# -------------------------------------
+# xtn       ahb_trans  -     @1185     
+#   Haddr   integral   32    'h840002a7
+#   Hwdata  integral   32    'h4aa196c 
+#   Hwrite  integral   1     1         
+#   Htrans  integral   2     2         
+#   Hsize   integral   2     'd0       
+#   Hburst  integral   3     'h0       
+#   Hrdata  integral   32    'h0       
+# -------------------------------------
+# 
+# Width = 32, size 8 bits
+#                  135BYTE3_endian1
+# UVM_INFO ../tb/scoreboard.sv(99) @ 145: uvm_test_top.env_h.scoreboard_h [SCOREBOARD APB] apb_xtn data getting from tlm fifo 
+#  --------------------------------------
+# Name       Type       Size  Value     
+# --------------------------------------
+# apb_xtnh   apb_trans  -     @1206     
+#   Prdata   integral   32    'h0       
+#   Pwdata   integral   32    'h4       
+#   Paddr    integral   32    'h840002a7
+#   Pselx    integral   4     'd6       
+#   Pwrite   integral   1     1         
+#   Penable  integral   1     1         
+# --------------------------------------
+# 
+# ADDRESS COMPARED SUCESSFULLY
+# Haddr = 2214593191, Paddr = 2214593191
+# DATA COMPARED SUCESSFULLY
+# Hwdata = 4, Pwdata = 4
+# UVM_INFO ../tb/scoreboard.sv(90) @ 145: uvm_test_top.env_h.scoreboard_h [SCOREBOARD AHB] src_xtn data getting from tlm fifo 
+#  -------------------------------------
+# Name      Type       Size  Value     
+# -------------------------------------
+# xtn       ahb_trans  -     @1194     
+#   Haddr   integral   32    'h840002a7
+#   Hwdata  integral   32    'h4aa196c 
+#   Hwrite  integral   1     1         
+#   Htrans  integral   2     2         
+#   Hsize   integral   2     'd0       
+#   Hburst  integral   3     'h0       
+#   Hrdata  integral   32    'h0       
+# -------------------------------------
+# 
+# Width = 32, size 8 bits
+#                  155BYTE3_endian1
+# UVM_INFO ../tb/scoreboard.sv(99) @ 165: uvm_test_top.env_h.scoreboard_h [SCOREBOARD APB] apb_xtn data getting from tlm fifo 
+#  --------------------------------------
+# Name       Type       Size  Value     
+# --------------------------------------
+# apb_xtnh   apb_trans  -     @1214     
+#   Prdata   integral   32    'h0       
+#   Pwdata   integral   32    'h4       
+#   Paddr    integral   32    'h840002a7
+#   Pselx    integral   4     'd6       
+#   Pwrite   integral   1     1         
+#   Penable  integral   1     1         
+# --------------------------------------
+# 
+# ADDRESS COMPARED SUCESSFULLY
+# Haddr = 2214593191, Paddr = 2214593191
+# DATA COMPARED SUCESSFULLY
+# Hwdata = 4, Pwdata = 4
+# UVM_INFO ../tb/scoreboard.sv(90) @ 165: uvm_test_top.env_h.scoreboard_h [SCOREBOARD AHB] src_xtn data getting from tlm fifo 
+#  -------------------------------------
+# Name      Type       Size  Value     
+# -------------------------------------
+# xtn       ahb_trans  -     @1202     
+#   Haddr   integral   32    'h840002a7
+#   Hwdata  integral   32    'h4aa196c 
+#   Hwrite  integral   1     1         
+#   Htrans  integral   2     2         
+#   Hsize   integral   2     'd0       
+#   Hburst  integral   3     'h0       
+#   Hrdata  integral   32    'h0       
+# -------------------------------------
+# 
+# Width = 32, size 8 bits
+#                  175BYTE3_endian1
+# UVM_INFO ../tb/scoreboard.sv(99) @ 185: uvm_test_top.env_h.scoreboard_h [SCOREBOARD APB] apb_xtn data getting from tlm fifo 
+#  --------------------------------------
+# Name       Type       Size  Value     
+# --------------------------------------
+# apb_xtnh   apb_trans  -     @1222     
+#   Prdata   integral   32    'h0       
+#   Pwdata   integral   32    'h4       
+#   Paddr    integral   32    'h840002a7
+#   Pselx    integral   4     'd6       
+#   Pwrite   integral   1     1         
+#   Penable  integral   1     1         
+# --------------------------------------
+# 
+# ADDRESS COMPARED SUCESSFULLY
+# Haddr = 2214593191, Paddr = 2214593191
+# DATA COMPARED SUCESSFULLY
+# Hwdata = 4, Pwdata = 4
+# UVM_INFO ../tb/scoreboard.sv(90) @ 185: uvm_test_top.env_h.scoreboard_h [SCOREBOARD AHB] src_xtn data getting from tlm fifo 
+#  -------------------------------------
+# Name      Type       Size  Value     
+# -------------------------------------
+# xtn       ahb_trans  -     @1210     
+#   Haddr   integral   32    'h840002a7
+#   Hwdata  integral   32    'h4aa196c 
+#   Hwrite  integral   1     1         
+#   Htrans  integral   2     2         
+#   Hsize   integral   2     'd0       
+#   Hburst  integral   3     'h0       
+#   Hrdata  integral   32    'h0       
+# -------------------------------------
+# 
+# Width = 32, size 8 bits
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 195: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+#                  195BYTE3_endian1
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   20
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCOREBOARD AHB]     8
+# [SCOREBOARD APB]     7
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : /home/cad/eda/Questa-sim/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 195 ns  Iteration: 55  Instance: /top
+# Saving coverage database on exit...
+# End time: 12:34:50 on Dec 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

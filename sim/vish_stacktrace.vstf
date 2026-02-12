@@ -1,0 +1,23 @@
+# Current time Fri Dec 12 18:41:30 2025
+# Program = vish
+# Id = "2022.1"
+# Version = "2022.01"
+# Date = "Jan 29 2022"
+# Platform = "linux"
+# 0    0xf7fcb129: '<unknown (@0xf7fcb129)>'
+# 1    0xf7fcb14b: '<unknown (@0xf7fcb14b)>'
+# 2    0x00000283: '<unknown (@0x283)>'
+# 3    0xfffffffd: '<unknown (@0xfffffffd)>'
+# Current time Fri Dec 12 18:41:30 2025
+# Program = vish
+# Id = "2022.1"
+# Version = "2022.01"
+# Date = "Jan 29 2022"
+# Platform = "linux"
+# 0    0xf7fcb129: '<unknown (@0xf7fcb129)>'
+# 1    0xf7fcb14b: '<unknown (@0xf7fcb14b)>'
+# 2    0x00007883: '<unknown (@0x7883)>'
+# 3    0x00000005: '<unknown (@0x5)>'
+# transcript error: error writing "stdout": I/O error
+    while executing
+"puts -nonewline stdout $s"
